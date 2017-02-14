@@ -10,21 +10,21 @@ import android.widget.TextView;
 import com.android11.master.R;
 import com.android11.master.home.bean.HomePageBean;
 import com.android11.master.http.APIService;
-import com.android11.master.http.base.BaseResp;
 import com.android11.master.http.HRetrofitNetHelper;
+import com.android11.master.http.base.BaseResp;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import retrofit2.Call;
 
 public class HomeActivity extends AppCompatActivity implements HRetrofitNetHelper.RetrofitCallBack<HomePageBean> {
 
-    @Bind(R.id.btn_go)
+    @BindView(R.id.btn_go)
     Button btnGo;
-    @Bind(R.id.btn_go2)
+    @BindView(R.id.btn_go2)
     Button btnGo2;
-    @Bind(R.id.tv_result)
+    @BindView(R.id.tv_result)
     TextView tvResult;
 
     private Activity mActivity;
